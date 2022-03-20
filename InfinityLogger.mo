@@ -30,7 +30,7 @@ shared(msg) actor class InfinityLogger() {
         assert(to - from < 100);
         let startIndex = from / 100;
         let number = to - from;
-        let logger = Logger.Logger<Text>(state.get(index));
+        let logger = Logger.Logger<Text>(state.get(startIndex));
         logger.view(0, number);
     }
 }
